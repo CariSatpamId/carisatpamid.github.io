@@ -1,1 +1,0 @@
-# carisatpamid.github.io
