@@ -1,0 +1,130 @@
+<html>
+<head>
+<title>Tugas Teknologi Web</title>
+</head>
+<style>
+body
+{ background: #c8c8c8;
+background-size : cover;}
+.center {
+  margin-left: 425px; color : black; font-size : 22px}
+div {
+  border: 1px solid black;
+  padding: 20px 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 425px;
+  margin-left: 425px;
+  background-color: white;
+}
+.button {
+	display: inline-block;
+    background-color: red;
+    border: none;
+    color: white;
+	padding: 20px 205px;
+    text-align: center;
+	outline: none;
+	border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button:hover {background-color: green;}
+.button:active {
+  background-color: blue;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);}
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+img {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 11px 28px;
+  background-color: white;
+}
+.active {
+  background-color: Violet;
+ border-radius: 8px;
+}
+</style>
+
+<script type="text/javascript">
+    function validate(){
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      var repeatpassword = document.getElementById("repeatpassword").value;
+      var nomor = document.getElementById("nomor").value;
+        if ( username == "aku" && password == "test" && repeatpassword == "test" && nomor == "08xxxx"){
+          window.location = "sudah login.html"; 
+}
+else{
+alert ("Login Gagal");
+return false;
+}
+}
+</script>
+<body>
+<div> 
+<h1><center> Buat Akun </h1></center>
+<img src="gambar/gambar.jpg" alt="gambar" width="200" height="200"><br>
+  <label name="username"><b>Nama Lengkap</b></label><br>
+             <input type="text" placeholder="Masukan Nama Lengkap" name="username" id="username" required><br>
+
+         <label form="password"><b>Kata Sandi</b></label><br>
+             <input type="password" placeholder="Masukan Kata Sandi " name="password" id="password" required><br>
+
+          <label form="password"><b>Ulang Kata Sandi</b></label><br>
+             <input type="password" placeholder="Masukan Kata Sandi Ulang" name="repeatpassword" id="repeatpassword" required><br>
+
+          <label form="password"><b>Nomor Telepon</b></label><br>
+             <input type="text" placeholder="Masukan Nomor Telepon" name="nomor" id="nomor" required><br>
+<button class="button" value="Login" id="submit" onclick="validate()"/> Daftar </button><br><p>
+<br>
+<ul>
+  <li style="float:right"><a href="masuk.html">Sudah Memiliki Akun</a></li>
+</ul>
+
+</div>
+</body>
+</html>
